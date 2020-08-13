@@ -56,7 +56,7 @@ class BiliBili(object):
             resp = self.session.post(api, headers=self.headers, data=data)
             if json.loads(resp.text)['code'] == 75415:
                 break
-            time.sleep(1)
+            time.sleep(0.3)
 
         # code = 75415  message = "抽奖次数不足"
         print(resp.text)
@@ -80,7 +80,7 @@ def main_handler(event=None, context=None):
     cookie, csrf = get_cookie_and_csrf(shimo)
     b = BiliBili(cookie, csrf, sid)
     b.add_times(3)
-    time.sleep(1)
+    time.sleep(0.3)
     b.add_times(4)
     b.lottery()
     print("Received event: " + json.dumps(event, indent=2))
