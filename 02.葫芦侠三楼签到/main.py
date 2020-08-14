@@ -94,7 +94,7 @@ async def main():
 
         sign_tasks = []
         for cate in cates:
-            sign_tasks.append(asyncio.create_task(sign_in(session, key=key, cate_id=cate)))
+            sign_tasks.append(asyncio.ensure_future(sign_in(session, key=key, cate_id=cate)))
         completed, pending = await asyncio.wait(sign_tasks)
         results = [t.result() for t in completed]
         print('results: {!r}'.format(results))
