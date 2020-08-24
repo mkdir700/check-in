@@ -84,8 +84,8 @@ class HeathReport(object):
             elif f['id'] == 36:
                 f['fields'][0]['tip']['text'] = r"<p+style=\"text-align:+center;\"><span+style=\"font-size:+large;+font-weight:+bold;\">出行情况</span></p>"
             elif f['id'] == 8:
-                f['fields'][0]['values'][0]['val'] = "健康+"
-                f['fields'][0]['options'][0]['title'] = "健康+"
+                f['fields'][0]['values'][0]['val'] = "健康 "
+                f['fields'][0]['options'][0]['title'] = "健康 "
 
             if f['id'] in not_show:
                 f['isShow'] = False
