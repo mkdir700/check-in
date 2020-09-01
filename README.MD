@@ -23,3 +23,5 @@ Python3.6
 - [x] [学习通-健康上报](https://github.com/mkdir700/sign_in/tree/master/05.%E5%AD%A6%E4%B9%A0%E9%80%9A%E5%81%A5%E5%BA%B7%E6%89%93%E5%8D%A1)
 
 - [x] [学习通-课堂签到](https://github.com/mkdir700/chaoxing_auto_sign)
+
+- [x] [小One易统计打卡](https://github.com/mkdir700/OneHeathScript)
